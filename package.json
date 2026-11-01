@@ -1,0 +1,19 @@
+{
+  "name": "sketchpad",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Infinite-canvas sketching app for iPad and Apple Pencil",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/build.mjs --serve",
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "icons": "python3 scripts/make_icons.py"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0",
+    "tsx": "^4.20.0",
+    "typescript": "^6.0.0"
+  }
+}
